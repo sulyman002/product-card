@@ -9,7 +9,7 @@
         font-family: "Montserrat", sans-serif;
         width: 100vw;
         height: 100vh;
-        background-color: var(--cream-neutral );
+        background-color: var(--cream-neutral);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -67,7 +67,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 40%;
+        width: 45%;
         height: 550px;
         background-color: white;
         border-radius: 10px;
@@ -117,5 +117,36 @@
     }
 
     .card-content p {
+        color: var(--grey-neutral);
+        font-size: 16px;
 
+    }
+
+    .price {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .price h1 {
+        color: var(--green-pry);
+    }
+
+    .price p {
+        text-decoration: line-through;
+        color: var(--green-pry);
+
+    }
+
+    button{
+        padding: 22px;
+        /* display: flex; */
+        align-items: center;
+        font-weight: var(--fw-bold);
+        background-color: var(--green-pry);
+        border: none;
+        color: var(--white-neutral);
+        font-size: 16px;
+        border-radius: 5px; 
+        cursor: pointer;
     }
