@@ -67,7 +67,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 45%;
+        width: 50%;
         height: 550px;
         background-color: white;
         border-radius: 10px;
@@ -96,10 +96,8 @@
         padding: 30px;
         line-height: 1.2;
         gap: 20px;
+        overflow: hidden;
 
-        .card-content>p {
-            color: red;
-        }
     }
 
     .card-content p:first-child {
@@ -114,13 +112,21 @@
         font-size: 40px;
         font-weight: var(--fw-bold);
         text-wrap: balance;
+
     }
+
 
     .card-content p {
         color: var(--grey-neutral);
         font-size: 16px;
+        overflow: hidden;
 
     }
+
+    /* .cont {
+        height: 80px;
+        overflow: hidden;
+    } */
 
     .price {
         display: flex;
@@ -134,11 +140,11 @@
 
     .price p {
         text-decoration: line-through;
-        color: var(--green-pry);
-
+        color: var(--grey-neutral);
+        font-weight: var(--fw-light);
     }
 
-    button{
+    button {
         padding: 22px;
         /* display: flex; */
         align-items: center;
@@ -147,6 +153,69 @@
         border: none;
         color: var(--white-neutral);
         font-size: 16px;
-        border-radius: 5px; 
+        border-radius: 5px;
         cursor: pointer;
+    }
+
+    button:hover,
+    button:active {
+        background-color: hsl(158, 35%, 53%);
+    }
+
+    @media screen and (max-width: 1024px) {
+        main {
+            width: 90%;
+            height: auto;
+            flex-direction: column;
+        }
+
+        .img-card {
+            width: 100%;
+            height: 300px;
+
+        }
+
+        img {
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .card-content {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .card-content h1 {
+            font-size: 30px;
+        }
+
+        .price {
+            gap: 30px;
+        }
+
+        .price h1 {
+            font-size: 30px;
+        }
+
+    }
+
+    @media screen and (max-width: 1444px) {
+        main {
+            width: 70%;
+        }
+
+        .card-content p {
+            overflow: hidden;
+        }
+
+        .card-content h1 {
+            font-size: clamp(1.5rem, );
+        }
+
+
+        .cont {
+
+            height: 150px;
+            overflow: hidden;
+        }
+
     }
