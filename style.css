@@ -1,0 +1,121 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    body {
+        font-family: "Montserrat", sans-serif;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--cream-neutral );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    :root {
+        /*colors*/
+        --green-pry: hsl(158, 36%, 37%);
+        --green-sec: hsl(158, 42%, 18%);
+
+        --dark-neutral: hsl(212, 21%, 14%);
+        --grey-neutral: hsl(228, 12%, 48%);
+        --cream-neutral: hsl(30, 38%, 92%);
+        --white-neutral: hsl(0, 0%, 100%);
+
+        /*font weights*/
+        --fw-light: 500;
+        --fw-bold: 700;
+
+    }
+
+
+
+    /* @layer base {
+
+        h1,
+        h2 {
+            font-weight: var(--fw-bold);
+        }
+
+        p {
+            font-weight: var(--fw-light);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+
+        }
+    } */
+
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 550px;
+        background-color: white;
+        border-radius: 10px;
+
+    }
+
+    .img-card {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px 0 0 10px;
+
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 30px;
+        line-height: 1.2;
+        gap: 20px;
+
+        .card-content>p {
+            color: red;
+        }
+    }
+
+    .card-content p:first-child {
+        color: var(--grey-neutral);
+        font-size: 16px;
+        letter-spacing: 5px;
+        font-weight: var(--fw-bold);
+    }
+
+    .card-content h1 {
+        font-family: "Fraunces", serif;
+        font-size: 40px;
+        font-weight: var(--fw-bold);
+        text-wrap: balance;
+    }
+
+    .card-content p {
+
+    }
