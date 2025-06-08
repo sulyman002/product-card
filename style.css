@@ -156,10 +156,13 @@
         border-radius: 5px;
         cursor: pointer;
     }
-
+    
+   i {
+    margin-right: 10px;
+   }
     button:hover,
     button:active {
-        background-color: hsl(158, 35%, 53%);
+        background-color: var(--green-sec);
     }
 
     @media screen and (max-width: 1024px) {
